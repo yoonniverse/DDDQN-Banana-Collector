@@ -33,15 +33,15 @@ The task is episodic, and in order to solve the environment, the agent must get 
     (_For Windows users_) Check out [this link](https://support.microsoft.com/en-us/help/827218/how-to-determine-whether-a-computer-is-running-a-32-bit-version-or-64) if you need help with determining if your computer is running a 32-bit version or 64-bit version of the Windows operating system.
 
     (_For AWS_) If you'd like to train the agent on AWS (and have not [enabled a virtual screen](https://github.com/Unity-Technologies/ml-agents/blob/master/docs/Training-on-Amazon-Web-Service.md)), then please use [this link](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P1/Banana/Banana_Linux_NoVis.zip) to obtain the environment.
-2. unzip and move the file to root directory
+2. unzip and move the file to project root directory
 3. run `conda create -n bc python=3.8`
 4. run `conda activate bc`
 5. at 'unityagents_installation' directory, run `pip install .`
-6. at root directory run `bash install_dependencies.sh`
+6. at project root directory run `bash install_dependencies.sh`
 
 ### Instructions
 
-1. `python train.py`: train agent and save it to *qnetwork.ckpt*
-2. `python test.py`: test agent for `n_episodes` times, each with different environment seed.
+1. `python train.py`: trains agent and saves it to 'qnetwork.ckpt'
+2. `python test.py`: tests agent for `n_episodes` times, each with different environment seed.
 
 **make sure your downloaded & unzipped unity environment matches `--env_path` argument in both commands**
