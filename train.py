@@ -50,19 +50,7 @@ def dqn(env, agent, n_episodes=2000, max_t=1000, eps=1.0, eps_end=0.01, eps_deca
 
 
 if __name__ == '__main__':
-    """
-    * lr: 5e-4 (learning rate for updating local q-network)
-* gamma: 0.9 (discount factor when calculating return)
-* tau: 1e-3 (learning rate for updating target q-network)
-* update_freq: 4 (update local/target q-network every ~ steps)
-* buffer_size: 1e5 (maximum number of experiences to save in replay buffer)
-* batch_size: 64 (number of experiences to do one step of update)
-* n_episodes: 1000 (total number of episodes to play)
-* max_t: 1000 (maximum steps to take in single episode)
-* eps: 1 (starting epsilon for epsilon-greedy)
-* eps_end: 0.01 (minimum value for epsilon)
-* eps_decay: 0.995 (decay rate per step for epsilon)
-    """
+
     parser = ArgumentParser()
     parser.add_argument('--env_path', type=str, default='Banana_Linux/Banana.x86_64', help='path for unity environment')
     parser.add_argument('--save_path', type=str, default='qnetwork.ckpt', help='save path for trained q-network weights')
